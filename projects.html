@@ -1,87 +1,62 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projets - Mon Portfolio</title>
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html">Benjamin LUABA</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="skills.html">Compétences</a></li>
-                <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
-                <li class="nav-item"><a class="nav-link active" href="projects.html">Projets</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <header class="header" data-aos="fade-down">
-        <div class="container mt-5">
-            <h2 data-aos="fade-up">Mes Projets</h2>
-            <div class="row">
-                <div class="col-md-4 project-card" data-aos="flip-left">
-                    <div class="card">
-                        <img src="./assets/formulaire_d'enquête.PNG" class="card-img-top" alt="Projet 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Formulaire d'enquête</h5>
-                            <p class="card-text">Formulaire d'enquête interactif codé en HTML et CSS, conçu pour collecter des données de manière efficace et conviviale. </p>
-                            <a href="#" class="btn btn-primary">Voir le projet</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 project-card" data-aos="flip-left">
-                    <div class="card">
-                        <img src="./assets/kadea_online.PNG" class="card-img-top" alt="Projet 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Accueil kadea online</h5>
-                            <p class="card-text">Kadea Online : une plateforme qui permet d'aprendre les bases du web codé  en HTML et CSS, offrant une expérience utilisateur intuitive.</p>
-                            <a href="#" class="btn btn-primary">Voir le projet</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 project-card" data-aos="flip-left">
-                    <div class="card">
-                        <img src="./assets/Portiolio_Benjamin_Luaba.PNG" class="card-img-top" alt="Projet 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Portiolio Benjamin Luaba</h5>
-                            <p class="card-text">Mon portfolio, conçu avec HTML, CSS, JavaScript et Bootstrap, présente mes projets et compétences de manière élégante et réactive.</p>
-                            <a href="#" class="btn btn-primary">Voir le projet</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="page-container">
+    <header class="header">
+      <h1><span class="cyan">Benjamin</span> LUABA</h1>
+      <nav>
+        <ul class="navbar">
+          <li><a href="/acceuil.html">Accueil</a></li>
+          <li><a href="/about.html">À propos</a></li>
+          <li><a href="/projects.html" class="active">Projets</a></li>
+          <li><a href="/skills.html">Compétences</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <footer class="text-center mt-5 p-3">
-        <p>© 2025 Benjamin LUABA</p>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/benjamin-luaba-249aa6288/" target="_blank">
-                <img src="./assets/linkedin-icon.png" alt="LinkedIn" width="30">
-            </a>
-            <a href="https://web.facebook.com/benjamin.luaba.1" target="_blank">
-                <img src="./assets/facebook-icon.png" alt="Facebook" width="30">
-            </a>
-            <a href="https://github.com/BenjiLuaba" target="_blank">
-                <img src="./assets/github-icon.png" alt="GitHub" width="30">
-            </a>
-        </div>
-    </footer>
+    <main class="projects">
+      <h2 class="cyan">Mes Projets</h2>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
+      <div class="project-container">
+        <!-- Projet 1 -->
+        <div class="project-card">
+          <img src="./assets/formulaire_d'enquête.PNG" alt="Formulaire d'enquête" />
+          <h3>Formulaire d'enquête</h3>
+          <p>Formulaire interactif en HTML et CSS, conçu pour collecter efficacement des données.</p>
+          <a href="#" class="btn">Voir le projet</a>
+        </div>
+
+        <!-- Projet 2 -->
+        <div class="project-card">
+          <img src="./assets/kadea_online.PNG" alt="Accueil Kadea Online" />
+          <h3>Accueil Kadea Online</h3>
+          <p>Une page d’accueil éducative HTML/CSS pour apprendre les bases du web simplement.</p>
+          <a href="#" class="btn">Voir le projet</a>
+        </div>
+
+        <!-- Projet 3 -->
+        <div class="project-card">
+          <img src="./assets/Portiolio_Benjamin_Luaba.PNG" alt="Portfolio Benjamin Luaba" />
+          <h3>Portfolio Benjamin Luaba</h3>
+          <p>Portfolio codé avec HTML, CSS, JavaScript, élégant et responsive.</p>
+          <a href="https://benjiluaba.github.io/Mon_Portifolio/" class="btn">Voir le projet</a>
+        </div>
+      </div>
+    </main>
+
+
+  </div>
 </body>
+<footer>
+    <p>Designed by <span class="cyan">Benjamin</span> with HTML CSS JS</p>
+    <p>Tous droits réservés 2025</p>
+  </footer>
+  <script src="/script.js"></script>
 </html>
